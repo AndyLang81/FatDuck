@@ -106,18 +106,36 @@ footer {
 .footer-right {
     display: flex;
     justify-content: space-between;
-    width: 180px; /* Adjust this width as needed */
+    width: 140px; /* Adjusted this to make space for smaller icons */
 }
 
-.social-icon img {
-    width: 30px; /* Adjust icon size */
-    height: 30px;
+/* Social Media Icon Styling */
+.social-icon {
+    color: white; /* Set icon color to white */
+    font-size: 24px; /* Make the icon size smaller */
     margin-left: 10px; /* Space between icons */
+    text-decoration: none; /* Remove underline */
 }
 
-.social-icon:hover img {
-    opacity: 0.7; /* Optional: Hover effect for social icons */
+.social-icon:hover {
+    opacity: 0.7; /* Slight opacity change on hover */
 }
+
+/* Remove underline from the logo link */
+header .logo a {
+    text-decoration: none; /* Remove underline from logo link */
+    color: white; /* Ensure logo text is white */
+}
+
+/* Optional: Hover effect on icons */
+.social-icon i {
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover i {
+    color: #ff6347; /* Change icon color on hover (optional) */
+}
+
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
