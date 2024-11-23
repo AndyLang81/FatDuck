@@ -1,72 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>The Fat Duck Restaurant</title>
-        <link rel="stylesheet" href="../css/styles.css">
-        <!-- Add FontAwesome CDN link -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <!-- Add Platypi font link -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fat Duck Restaurant</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Add FontAwesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Add Platypi font link -->
     <link href="https://fonts.googleapis.com/css2?family=Platypi&display=swap" rel="stylesheet">
-        <!-- Add favicon -->
+    <!-- Add favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/icons8-duck-50.png">
 
-    </head>
+</head>
+
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <!-- Logo as a link to index.html -->
-        <div class="logo">
-            <a href="index.html"><h1>THE FAT DUCK</h1></a>
-        </div>
-        <!-- Burger Icon for Mobile -->
-        <div class="burger" id="burger-icon">
-            <div class="burger-line"></div>
-            <div class="burger-line"></div>
-            <div class="burger-line"></div>
-        </div>
-        <!-- Navigation Menu -->
-        <nav id="nav-menu">
-            <ul>
-                <li><a href="index.html">Home</a></li> <!-- Added Home button -->
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="book.html">Book</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+    <section class="menu">
+        <h2>Our Menu</h2>
 
-    <main>
-        <h2>Welcome to The Fat Duck!</h2>
-        <p>Your perfect dining experience begins here.</p>
-    </main>
+        <ul class="menu-items">
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Venison Braised with Root Vegetables .......... 295 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Fire-Roasted Game Hen .......... 225 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Sautéed Wild Boar with Red Wine Sauce .......... 265 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Beef Tenderloin with Garlic Butter .......... 320 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Herb-Crusted Pork Rack .......... 245 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Grilled Fowl with Spiced Butter .......... 215 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Roasted Duck Breast with Cherry Glaze .......... 280 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Slow-Cooked Lamb Shank .......... 300 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Braised Beef Short Ribs .......... 310 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Fire-Roasted Venison Steak .......... 350 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Charred Boar Ribs with Honey Glaze .......... 295 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Roasted Root Vegetables with Thyme .......... 110 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Wild Mushroom Risotto .......... 135 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Fire-Grilled Asparagus with Lemon .......... 95 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Garlic Mashed Potatoes .......... 85 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Sautéed Brussels Sprouts .......... 120 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Smoked Bone Marrow .......... 145 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Roasted Chestnut Soup .......... 120 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Cured Game Meat Platter .......... 200 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Warm Apple Pie with Caramel Sauce .......... 110 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Decadent Chocolate Tart .......... 130 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Locally Brewed IPA .......... 75 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Belgian Witbier .......... 65 DKK
+            </li>
+            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                Dark Lager .......... 70 DKK
+            </li>
+        </ul>
+    </section>
 
-    <footer>
-        <div class="footer-left">
-            <p>&copy; 2024 The Fat Duck. All rights reserved.</p>
-        </div>
-        <div class="footer-right">
-            <!-- Social Media Icons using FontAwesome -->
-            <a href="https://www.facebook.com" class="social-icon" target="_blank">
-                <i class="fab fa-facebook-f"></i> <!-- Facebook Icon -->
-            </a>
-            <a href="https://www.instagram.com" class="social-icon" target="_blank">
-                <i class="fab fa-instagram"></i> <!-- Instagram Icon -->
-            </a>
-            <a href="https://twitter.com" class="social-icon" target="_blank">
-                <i class="fab fa-twitter"></i> <!-- Twitter Icon -->
-            </a>
-            <a href="https://www.linkedin.com" class="social-icon" target="_blank">
-                <i class="fab fa-linkedin-in"></i> <!-- LinkedIn Icon -->
-            </a>
-        </div>
-    </footer>
+    <script src="script.js"></script>
+</body>
 
-    <!-- Link to JavaScript -->
-    <script src="../js/script.js"></script>
+
+<footer>
+    <div class="footer-left">
+        <p>&copy; 2024 The Fat Duck. All rights reserved.</p>
+    </div>
+    <div class="footer-right">
+        <!-- Social Media Icons using FontAwesome -->
+        <a href="https://www.facebook.com" class="social-icon" target="_blank">
+            <i class="fab fa-facebook-f"></i> <!-- Facebook Icon -->
+        </a>
+        <a href="https://www.instagram.com" class="social-icon" target="_blank">
+            <i class="fab fa-instagram"></i> <!-- Instagram Icon -->
+        </a>
+        <a href="https://twitter.com" class="social-icon" target="_blank">
+            <i class="fab fa-twitter"></i> <!-- Twitter Icon -->
+        </a>
+        <a href="https://www.linkedin.com" class="social-icon" target="_blank">
+            <i class="fab fa-linkedin-in"></i> <!-- LinkedIn Icon -->
+        </a>
+    </div>
+</footer>
+
+<!-- Link to JavaScript -->
+<script src="../js/script.js"></script>
 
 </body>
+
 </html>

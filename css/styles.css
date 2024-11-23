@@ -129,7 +129,7 @@ footer {
 
 .footer-left p {
     margin: 0;
-    padding: 2px 0; /* Reduce vertical padding */
+    padding: 1px 0; /* Reduce vertical padding */
     text-align: left;
 }
 
