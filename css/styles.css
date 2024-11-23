@@ -39,8 +39,10 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center; /* Center nav items on larger screens */
-    flex-grow: 1; /* Ensures the nav items take up the remaining space */
+    justify-content: center;
+    /* Center nav items on larger screens */
+    flex-grow: 1;
+    /* Ensures the nav items take up the remaining space */
 }
 
 nav ul li {
@@ -88,23 +90,104 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px; /* Space between sections */
+    margin-bottom: 40px;
+    /* Space between sections */
     padding: 40px 0;
 }
 
 .content-section .image-container {
-    width: 50%; /* Image takes up 50% of the section */
+    width: 50%;
+    /* Image takes up 50% of the section */
 }
 
 .content-section img {
-    width: 100%; /* Ensure the image takes full width of the container */
+    width: 100%;
+    /* Ensure the image takes full width of the container */
     height: auto;
 }
 
 .content-section .text-container {
-    width: 50%; /* Text takes up the other 50% of the section */
+    width: 50%;
+    /* Text takes up the other 50% of the section */
     padding: 0 20px;
 }
+
+/* General Styling for the Menu Section */
+.menu {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Flexbox container to divide menu into two columns */
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; /* Space between the two columns */
+    flex-wrap: wrap;
+    align-items: flex-start; /* Align items to the top of the column */
+}
+
+/* Styling for Food and Drinks Section */
+.food, .drinks {
+    flex: 1;
+    min-width: 300px; /* Ensure each section has a minimum width */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    justify-content: flex-start; /* Align items to the top */
+}
+
+/* Menu Item Styling */
+.menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center menu items horizontally */
+}
+
+.menu-item {
+    font-size: 1.2em;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 0;
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+/* Separator Styling */
+.separator {
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+/* Hover Zoom Effect */
+.menu-item:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Price Styling */
+.menu-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
 
 /* Footer Styling */
 footer {
@@ -113,8 +196,10 @@ footer {
     padding: 20px;
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Positions left and right divs */
-    align-items: center; /* Centers vertically */
+    justify-content: space-between;
+    /* Positions left and right divs */
+    align-items: center;
+    /* Centers vertically */
 }
 
 .footer-left {
@@ -129,42 +214,54 @@ footer {
 
 .footer-left p {
     margin: 0;
-    padding: 1px 0; /* Reduce vertical padding */
+    padding: 1px 0;
+    /* Reduce vertical padding */
     text-align: left;
 }
 
 .separator {
-    margin: 0 8px; /* Reduce space around the separator */
+    margin: 0 8px;
+    /* Reduce space around the separator */
     font-weight: bold;
     font-size: 1.5em;
 }
 
 footer a {
-    color: white; /* Style the email link */
-    text-decoration: none; /* Remove underline */
+    color: white;
+    /* Style the email link */
+    text-decoration: none;
+    /* Remove underline */
 }
 
 footer a:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline;
+    /* Add underline on hover */
 }
 
 
 /* Social Media Icon Styling */
 .social-icon {
-    color: white; /* Set icon color to white */
-    font-size: 24px; /* Make the icon size smaller */
-    margin-left: 10px; /* Space between icons */
-    text-decoration: none; /* Remove underline */
+    color: white;
+    /* Set icon color to white */
+    font-size: 24px;
+    /* Make the icon size smaller */
+    margin-left: 10px;
+    /* Space between icons */
+    text-decoration: none;
+    /* Remove underline */
 }
 
 .social-icon:hover {
-    opacity: 0.7; /* Slight opacity change on hover */
+    opacity: 0.7;
+    /* Slight opacity change on hover */
 }
 
 /* Remove underline from the logo link */
 header .logo a {
-    text-decoration: none; /* Remove underline from logo link */
-    color: white; /* Ensure logo text is white */
+    text-decoration: none;
+    /* Remove underline from logo link */
+    color: white;
+    /* Ensure logo text is white */
 }
 
 /* Optional: Hover effect on icons */
@@ -173,20 +270,23 @@ header .logo a {
 }
 
 .social-icon:hover i {
-    color: #ff6347; /* Change icon color on hover (optional) */
+    color: #ff6347;
+    /* Change icon color on hover (optional) */
 }
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     nav ul {
-        display: none; /* Hide navigation links on mobile */
+        display: none;
+        /* Hide navigation links on mobile */
         width: 100%;
         text-align: center;
         position: absolute;
         top: 60px;
         left: 0;
         background-color: #000;
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
+        /* Stack items vertically */
     }
 
     nav ul li {
@@ -194,29 +294,53 @@ header .logo a {
     }
 
     .burger {
-        display: flex; /* Show burger icon */
-        position: absolute; /* Position burger icon at top-right */
-        right: 20px; /* Right-align the burger icon */
-        top: 20px; /* Add some space from the top */
+        display: flex;
+        /* Show burger icon */
+        position: absolute;
+        /* Position burger icon at top-right */
+        right: 20px;
+        /* Right-align the burger icon */
+        top: 20px;
+        /* Add some space from the top */
     }
 
     nav.active ul {
-        display: block; /* Show menu when active class is added */
+        display: block;
+        /* Show menu when active class is added */
     }
 
     /* Mobile-specific styling for content sections */
     .content-section {
-        flex-direction: column; /* Stack image and text vertically on mobile */
+        flex-direction: column;
+        /* Stack image and text vertically on mobile */
         align-items: center;
     }
 
     .content-section .image-container,
     .content-section .text-container {
-        width: 100%; /* Both take up full width on smaller screens */
-        text-align: center; /* Center text */
+        width: 100%;
+        /* Both take up full width on smaller screens */
+        text-align: center;
+        /* Center text */
     }
 
     .content-section .image-container img {
-        width: 80%; /* Scale down the image slightly on small screens */
+        width: 80%;
+        /* Scale down the image slightly on small screens */
+    }
+
+    /* Media Query for Moenu */
+
+    @media (max-width: 768px) {
+        .menu-container {
+            flex-direction: column;
+            /* Stack the sections vertically on smaller screens */
+            align-items: center;
+        }
+
+        .menu-item {
+            width: 100%;
+            /* Ensure menu items take full width on smaller screens */
+        }
     }
 }

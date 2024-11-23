@@ -17,112 +17,246 @@
 
 <body>
 
+    <!-- Header Section -->
+    <header>
+        <!-- Logo as a link to index.html -->
+        <div class="logo">
+            <a href="index.html">
+                <h1>THE FAT DUCK</h1>
+            </a>
+        </div>
+        <!-- Burger Icon for Mobile -->
+        <div class="burger" id="burger-icon">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+        <!-- Navigation Menu -->
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Added Home button -->
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="book.html">Book</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <section class="menu">
         <h2>Our Menu</h2>
 
-        <ul class="menu-items">
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Venison Braised with Root Vegetables .......... 295 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Fire-Roasted Game Hen .......... 225 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Sautéed Wild Boar with Red Wine Sauce .......... 265 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Beef Tenderloin with Garlic Butter .......... 320 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Herb-Crusted Pork Rack .......... 245 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Grilled Fowl with Spiced Butter .......... 215 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Roasted Duck Breast with Cherry Glaze .......... 280 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Slow-Cooked Lamb Shank .......... 300 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Braised Beef Short Ribs .......... 310 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Fire-Roasted Venison Steak .......... 350 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Charred Boar Ribs with Honey Glaze .......... 295 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Roasted Root Vegetables with Thyme .......... 110 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Wild Mushroom Risotto .......... 135 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Fire-Grilled Asparagus with Lemon .......... 95 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Garlic Mashed Potatoes .......... 85 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Sautéed Brussels Sprouts .......... 120 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Smoked Bone Marrow .......... 145 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Roasted Chestnut Soup .......... 120 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Cured Game Meat Platter .......... 200 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Warm Apple Pie with Caramel Sauce .......... 110 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Decadent Chocolate Tart .......... 130 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Locally Brewed IPA .......... 75 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Belgian Witbier .......... 65 DKK
-            </li>
-            <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                Dark Lager .......... 70 DKK
-            </li>
-        </ul>
+        <div class="menu-container">
+            <!-- Food Section -->
+            <div class="food">
+                <h3>Food</h3>
+
+                <!-- Starters -->
+                <h4>Starters</h4>
+                <ul class="menu-items">
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Roasted Bone Marrow .......... 145 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Chestnut Soup with Cream .......... 120 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Smoked Game Meat Platter .......... 200 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Grilled Foie Gras .......... 180 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Wild Mushroom Crostini .......... 130 DKK
+                    </li>
+                </ul>
+
+                <!-- Mains -->
+                <h4>Mains</h4>
+                <ul class="menu-items">
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Venison Braised with Root Vegetables .......... 295 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Fire-Roasted Game Hen .......... 225 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Sautéed Wild Boar with Red Wine Sauce .......... 265 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Beef Tenderloin with Garlic Butter .......... 320 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Herb-Crusted Pork Rack .......... 245 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Grilled Fowl with Spiced Butter .......... 215 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Roasted Duck Breast with Cherry Glaze .......... 280 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Slow-Cooked Lamb Shank .......... 300 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Braised Beef Short Ribs .......... 310 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Fire-Roasted Venison Steak .......... 350 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Charred Boar Ribs with Honey Glaze .......... 295 DKK
+                    </li>
+                </ul>
+
+                <!-- Desserts -->
+                <h4>Desserts</h4>
+                <ul class="menu-items">
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Warm Apple Pie with Caramel Sauce .......... 110 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Decadent Chocolate Tart .......... 130 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Crème Brûlée .......... 95 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Poached Pear in Red Wine .......... 120 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Lemon Sorbet with Mint .......... 80 DKK
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Drinks Section -->
+            <div class="drinks">
+                <h3>Drinks</h3>
+
+                <!-- Wine -->
+                <h4>Wine</h4>
+                <ul class="menu-items">
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Château Margaux - Bordeaux .......... 120 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Domaine de la Romanée-Conti - Burgundy .......... 110 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Rosé (Provence - Domaine Ott) .......... 95 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Veuve Clicquot .......... 140 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        VVino Nobile di Montepulciano .......... 105 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Sauvignon Blanc - Cloudy Bay .......... 100 DKK
+                    </li>
+                </ul>
+
+                <!-- Beer -->
+                <h4>Beer</h4>
+                <ul class="menu-items">
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Locally Brewed IPA .......... 75 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Belgian Witbier .......... 65 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Dark Lager .......... 70 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Pilsner .......... 60 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Ale .......... 65 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Stout .......... 80 DKK
+                    </li>
+                </ul>
+
+                <!-- Spirits and Snaps -->
+                <h4>Spirits & Snaps</h4>
+                <ul class="menu-items">
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Danish Aquavit .......... 70 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Caraway Schnapps .......... 75 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Elderflower Schnapps .......... 80 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Single Malt Scotch (Glenfiddich) .......... 85 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Gin (Hendrick's) .......... 75 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Rum (Mount Gay) .......... 70 DKK
+                    </li>
+                </ul>
+
+                <!-- Soft Drinks -->
+                <h4>Soft Drinks</h4>
+                <ul class="menu-items">
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Fresh Lemonade .......... 45 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Iced Tea .......... 40 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Sparkling Water .......... 30 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Ginger Ale .......... 35 DKK
+                    </li>
+                    <li class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                        Tonic Water .......... 30 DKK
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-    <script src="script.js"></script>
-</body>
 
 
-<footer>
-    <div class="footer-left">
-        <p>&copy; 2024 The Fat Duck. All rights reserved.</p>
-    </div>
-    <div class="footer-right">
-        <!-- Social Media Icons using FontAwesome -->
-        <a href="https://www.facebook.com" class="social-icon" target="_blank">
-            <i class="fab fa-facebook-f"></i> <!-- Facebook Icon -->
-        </a>
-        <a href="https://www.instagram.com" class="social-icon" target="_blank">
-            <i class="fab fa-instagram"></i> <!-- Instagram Icon -->
-        </a>
-        <a href="https://twitter.com" class="social-icon" target="_blank">
-            <i class="fab fa-twitter"></i> <!-- Twitter Icon -->
-        </a>
-        <a href="https://www.linkedin.com" class="social-icon" target="_blank">
-            <i class="fab fa-linkedin-in"></i> <!-- LinkedIn Icon -->
-        </a>
-    </div>
-</footer>
 
-<!-- Link to JavaScript -->
-<script src="../js/script.js"></script>
+
+    <footer>
+        <div class="footer-left">
+            <p>Kultorvet 45 <span class="separator">•</span> 1175 Copenhagen K <span class="separator">•</span> Denmark
+            </p>
+            <p>Phone: +45 12345678 <span class="separator">•</span> <a
+                    href="mailto:TheFatDuck@duck.dk">TheFatDuck@duck.dk</a></p>
+        </div>
+        <div class="footer-right">
+            <!-- Social Media Icons -->
+            <a href="https://www.facebook.com" class="social-icon" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com" class="social-icon" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com" class="social-icon" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com" class="social-icon" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </footer>
+
+
+    <!-- Link to JavaScript -->
+    <script src="../js/script.js"></script>
 
 </body>
 
