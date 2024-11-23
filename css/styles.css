@@ -191,22 +191,22 @@ h2 {
 .contact {
     padding: 40px 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the section takes up full height of the viewport */
 }
 
-h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #333;
-}
-
+/* Container for the contact info and hours, vertically centered */
 .contact-container {
     display: flex;
     justify-content: space-between;
     gap: 40px; /* Space between the two columns */
     flex-wrap: wrap;
     margin-top: 20px;
+    flex-grow: 1; /* Allow the content to grow and push footer down */
 }
 
+/* Styling for Contact Info and Opening Hours Section */
 .contact-info, .contact-hours {
     flex: 1;
     min-width: 300px; /* Ensure each section has a minimum width */
@@ -237,11 +237,7 @@ p {
     text-align: center;
 }
 
-.contact-text h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
+    
 /* Link Styling for Email */
 .contact-info a {
     text-decoration: none;
@@ -251,10 +247,6 @@ p {
 .contact-info a:hover {
     text-decoration: underline;
 }
-
-
-    
-
 
 
 
@@ -269,10 +261,9 @@ footer {
     padding: 20px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    /* Positions left and right divs */
-    align-items: center;
-    /* Centers vertically */
+    justify-content: space-between; /* Positions left and right divs */
+    align-items: center; /* Centers vertically */
+    margin-top: auto; /* Ensures footer is always at the bottom of the viewport */
 }
 
 .footer-left {
@@ -417,6 +408,17 @@ header .logo a {
         }
 
         
+    }
+
+    /* Media Query for Contact */
+        .contact-container {
+            flex-direction: column; /* Stack the sections vertically on smaller screens */
+            align-items: center;
+        }
+    
+        .contact-info, .contact-hours {
+            width: 100%; /* Ensure sections take up full width on smaller screens */
+        }
     }
 
     
