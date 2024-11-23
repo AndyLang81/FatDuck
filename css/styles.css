@@ -115,7 +115,7 @@ main {
 /* General Styling for the Menu Section */
 .menu {
     padding: 40px 20px;
-    text-align: center;
+    text-align: center;  /* Center the title and headings */
 }
 
 h2 {
@@ -142,6 +142,7 @@ h2 {
     flex-direction: column;
     align-items: center; /* Center the content horizontally */
     justify-content: flex-start; /* Align items to the top */
+    text-align: center;  /* Center-align the text in each column */
 }
 
 /* Menu Item Styling */
@@ -166,6 +167,7 @@ h2 {
     margin-right: auto;
     padding: 5px 0;
     transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+    text-align: center;  /* Center the text in each menu item */
 }
 
 /* Separator Styling */
@@ -184,10 +186,6 @@ h2 {
     text-decoration: none;
     color: inherit;
 }
-
-
-
-
 
 /* Footer Styling */
 footer {
