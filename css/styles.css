@@ -59,7 +59,6 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-
 /* Burger Icon */
 .burger {
     display: none;
@@ -84,8 +83,27 @@ main {
     text-align: center;
 }
 
-section {
-    margin-bottom: 40px;
+/* Content Sections (Top and Bottom) */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px; /* Space between sections */
+    padding: 40px 0;
+}
+
+.content-section .image-container {
+    width: 50%; /* Image takes up 50% of the section */
+}
+
+.content-section img {
+    width: 100%; /* Ensure the image takes full width of the container */
+    height: auto;
+}
+
+.content-section .text-container {
+    width: 50%; /* Text takes up the other 50% of the section */
+    padding: 0 20px;
 }
 
 /* Footer Styling */
@@ -106,8 +124,30 @@ footer {
 .footer-right {
     display: flex;
     justify-content: space-between;
-    width: 140px; /* Adjusted this to make space for smaller icons */
+    width: 140px;
 }
+
+.footer-left p {
+    margin: 0;
+    padding: 2px 0; /* Reduce vertical padding */
+    text-align: left;
+}
+
+.separator {
+    margin: 0 8px; /* Reduce space around the separator */
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+footer a {
+    color: white; /* Style the email link */
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
 
 /* Social Media Icon Styling */
 .social-icon {
@@ -136,7 +176,6 @@ header .logo a {
     color: #ff6347; /* Change icon color on hover (optional) */
 }
 
-
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     nav ul {
@@ -163,5 +202,21 @@ header .logo a {
 
     nav.active ul {
         display: block; /* Show menu when active class is added */
+    }
+
+    /* Mobile-specific styling for content sections */
+    .content-section {
+        flex-direction: column; /* Stack image and text vertically on mobile */
+        align-items: center;
+    }
+
+    .content-section .image-container,
+    .content-section .text-container {
+        width: 100%; /* Both take up full width on smaller screens */
+        text-align: center; /* Center text */
+    }
+
+    .content-section .image-container img {
+        width: 80%; /* Scale down the image slightly on small screens */
     }
 }
