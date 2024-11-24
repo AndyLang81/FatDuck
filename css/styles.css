@@ -32,6 +32,14 @@ header .logo h1 {
     margin-left: 20px;
     font-size: 2em;
     font-weight: bold;
+    display: flex;
+    align-items: center; /* Vertically align the text and image */
+}
+
+.logo-image {
+    margin-left: 5px; /* Space between "Duck" and the image */
+    height: 1em; /* Make the image slightly larger than the text */
+    width: auto; /* Maintain the aspect ratio */
 }
 
 /* Navigation Styling */
@@ -102,7 +110,7 @@ main {
 }
 
 .content-section img {
-    width: 100%;
+    width: 40%;
     /* Ensure the image takes full width of the container */
     height: auto;
 }
