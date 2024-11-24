@@ -252,7 +252,7 @@ p {
 /* Link Styling for Email */
 .contact-info a {
     text-decoration: none;
-    color: inherit;
+    color: black;
 }
 
 .contact-info a:hover {
@@ -447,4 +447,6 @@ header .logo a {
         .contact-info, .contact-hours {
             width: 100%; /* Ensure sections take up full width on smaller screens */
         }
+
+        
     }
