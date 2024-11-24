@@ -131,6 +131,7 @@ h2 {
     gap: 40px; /* Space between the two columns */
     flex-wrap: wrap;
     align-items: flex-start; /* Align items to the top of the column */
+    text-align: center;
 }
 
 /* Styling for Food and Drinks Section */
@@ -153,21 +154,22 @@ h2 {
     width: 100%;
     display: flex;
     flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center menu items horizontally */
+    align-items: center; /* Center the menu items horizontally */
+    text-align: center; /* Center text inside each menu item */
 }
 
 .menu-item {
     font-size: 1.2em;
     margin: 10px 0;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;  /* Stack name and price vertically */
     width: 100%;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     padding: 5px 0;
     transition: transform 0.3s ease; /* Smooth transition for zoom effect */
-    text-align: center;  /* Center the text in each menu item */
+    text-align: center; /* Center the text inside each menu item */
 }
 
 /* Separator Styling */
