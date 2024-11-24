@@ -24,6 +24,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Slight shadow */
 }
 
 /* Logo Styling */
@@ -261,6 +262,7 @@ footer {
     align-items: center; /* Centers vertically */
     margin-top: auto; /* Ensures footer is always at the bottom of the viewport */
     flex-wrap: wrap; /* Allows the footer to wrap on smaller screens */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2); /* Slight shadow upwards */
 }
 
 
