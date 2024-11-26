@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'the_fat_duck', 
+    'fatduck_app',
 ]
 
 MIDDLEWARE = [
