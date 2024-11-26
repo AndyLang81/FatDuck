@@ -1,7 +1,7 @@
 from django.db import models
 
 class Booking(models.Model):
-    full_name = models.CharField(max_length=100)
+    full_name = models.CharField(max_length=99)
     email = models.EmailField()
     phone = models.CharField(max_length=15)
     date_of_booking = models.DateTimeField()
