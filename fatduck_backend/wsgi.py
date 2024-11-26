@@ -11,6 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'the_fat_duck.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'fatduck_backend.settings')
+
 
 application = get_wsgi_application()

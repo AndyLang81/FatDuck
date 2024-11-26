@@ -56,7 +56,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'the_fat_duck.urls'
+ROOT_URLCONF = 'fatduck_backend.urls'
 
 TEMPLATES = [
     {
@@ -74,7 +74,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'the_fat_duck.wsgi.application'
+WSGI_APPLICATION = 'fatduck_backend.wsgi.application'
+
 
 
 # Database
