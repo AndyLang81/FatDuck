@@ -25,13 +25,7 @@ SECRET_KEY = 'django-insecure-w4*ul^pqi63i%v5$7x0rqrx(jq9jo2tdarcctq!77&7_&ny9pe
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '8002-andylang81-fatduck-7l019q9b098.ws.codeinstitute-ide.net',  # Add the specific Gitpod URL
-    'localhost',  # You can also allow localhost
-    '127.0.0.1',  # Allow 127.0.0.1 for local testing
-    '0.0.0.0',  # Allow all IP addresses (useful in Gitpod for testing)
-    '*'
-]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -43,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'fatduck_app',
+    'the_fat_duck',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'fatduck_backend.urls'
+ROOT_URLCONF = 'the_fat_duck.urls'
 
 TEMPLATES = [
     {
@@ -74,8 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'fatduck_backend.wsgi.application'
-
+WSGI_APPLICATION = 'the_fat_duck.wsgi.application'
 
 
 # Database
@@ -120,12 +113,15 @@ USE_I18N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/5.1/howto/static-files/
-
-STATIC_URL = 'static/'
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+import os
+
+# Static files (CSS, JavaScript, images)
+STATIC_URL = '/static/'
+
+# Define where to collect static files
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
