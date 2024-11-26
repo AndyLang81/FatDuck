@@ -30,6 +30,7 @@ ALLOWED_HOSTS = [
     'localhost',  # You can also allow localhost
     '127.0.0.1',  # Allow 127.0.0.1 for local testing
     '0.0.0.0',  # Allow all IP addresses (useful in Gitpod for testing)
+    '*'
 ]
 
 
