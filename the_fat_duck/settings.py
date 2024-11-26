@@ -125,3 +125,6 @@ STATIC_URL = '/static/'
 
 # Define where to collect static files
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://8002-andylang81-fatduck-wu8dvlo9wzd.ws.codeinstitute-ide.net',]
