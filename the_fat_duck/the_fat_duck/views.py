@@ -1,15 +1,28 @@
-# the_fat_duck/views.py
-
 from django.shortcuts import render, redirect
-from .forms import BookingForm
+from .models import Booking
+from django.http import HttpResponse
 
-def book_table(request):
+# Create the submit_booking view
+def submit_booking(request):
     if request.method == 'POST':
-        form = BookingForm(request.POST)
-        if form.is_valid():
-            form.save()  # Save the booking data to the database
-            return redirect('booking_success')  # Redirect to a success page or confirmation page
-    else:
-        form = BookingForm()
+        # Get form data from POST req
+        name = request.POST['name']
+        email = request.POST['email']
+        phone = request.POST['phone']
+        date = request.POST['date']
+        guests = request.POST['guests']
+
+        # Create and save booking in the db
+        booking = Booking(
+            name=name,
+            email=email,
+            phone=phone,
+            date=date,
+            guests=guests
+        )
+        booking.save()
+
+        # Redirect to a success page (or back to booking form)
+        return HttpResponse('Booking submitted successfully!')
     
-    return render(request, 'book.html', {'form': form})
+    return render(request, 'book.html')  # If GET request, render form again
