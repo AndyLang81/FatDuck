@@ -8,49 +8,48 @@
         <!-- Add FontAwesome CDN link -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <!-- Add Platypi font link -->
-    <link href="https://fonts.googleapis.com/css2?family=Platypi&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Platypi&display=swap" rel="stylesheet">
         <!-- Add favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/icons8-duck-50.png">
-
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/icons8-duck-50.png">
     </head>
-<body>
+    <body>
 
- <!-- Header Section -->
- <header>
-    <!-- Logo as a link to index.html -->
-    <div class="logo">
-        <a href="index.html"><h1>THE FAT DUCK <img src="../assets/images/smallduck.png" alt="Small Duck" class="logo-image"></h1></a>
-    </div>
-    <!-- Burger Icon for Mobile -->
-    <div class="burger" id="burger-icon">
-        <div class="burger-line"></div>
-        <div class="burger-line"></div>
-        <div class="burger-line"></div>
-    </div>
-    
-    <!-- Navigation Menu -->
-    <nav id="nav-menu">
-        <ul>
-            <li><a href="index.html">Home</a></li> <!-- Added Home button -->
-            <li><a href="menu.html">Our menu</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-            <li><a href="book.html">Book a table</a></li>
-            <li><a href="about.html">About us</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Header Section -->
+    <header>
+        <!-- Logo as a link to index.html -->
+        <div class="logo">
+            <a href="index.html"><h1>THE FAT DUCK <img src="../assets/images/smallduck.png" alt="Small Duck" class="logo-image"></h1></a>
+        </div>
+        <!-- Burger Icon for Mobile -->
+        <div class="burger" id="burger-icon">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+        
+        <!-- Navigation Menu -->
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li> <!-- Added Home button -->
+                <li><a href="menu.html">Our menu</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="book.html">Book a table</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-
+    <!-- Main Content -->
     <main>
         <h2>Welcome to The Fat Duck!</h2>
     </main>
 
-
-    <!-- Main Content -->
+    <!-- Main Content for the Booking Form -->
     <main>
         <section class="booking-form">
             <h2>Book Your Table</h2>
-            <form action="/submit-booking" method="POST">
+            <!-- Form action URL is set here -->
+            <form action="{% url 'submit_booking' %}" method="POST">
                 {% csrf_token %} <!-- CSRF token for security -->
 
                 <div class="form-group">
@@ -83,41 +82,11 @@
         </section>
     </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Footer Section -->
     <footer>
         <div class="footer-left">
-            <p>Kultorvet 45 <span class="separator">•</span> 1175 Copenhagen K <span class="separator">•</span> Denmark
-            </p>
-            <p>Phone: +45 12345678 <span class="separator">•</span> <a
-                    href="mailto:TheFatDuck@duck.dk">TheFatDuck@duck.dk</a></p>
+            <p>Kultorvet 45 <span class="separator">•</span> 1175 Copenhagen K <span class="separator">•</span> Denmark</p>
+            <p>Phone: +45 12345678 <span class="separator">•</span> <a href="mailto:TheFatDuck@duck.dk">TheFatDuck@duck.dk</a></p>
         </div>
         <div class="footer-right">
             <!-- Social Media Icons -->
@@ -139,5 +108,5 @@
     <!-- Link to JavaScript -->
     <script src="../js/script.js"></script>
 
-</body>
+    </body>
 </html>
